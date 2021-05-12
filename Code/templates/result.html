@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" class=" js no-touch">
+
+<head>
+  <title>Boston Crime </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+</head>
+<style>
+
+* {
+	margin: 0; padding: 0;
+}
+
+body {
+	background-color: #1877F2;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+    color: #6ee1f5;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+div.sun {
+    background-color:white;
+    height:15em;
+    border-radius : 30px;
+    padding: 0 8.1em 0em 5em;
+    border: 3px solid white;
+    margin: 0 80em 0 10em;
+    box-shadow: 3px 3px 16px #272634;
+    transition: transform 1s;
+}
+        
+div.sun:hover {
+	transform: scale(1.1);
+	z-index: 1000;
+	background: white;
+}
+
+.list {
+	padding-top: 4em;
+	padding-left: 4em;
+	display: grid;
+    grid-template-columns:1em 1em 1em 1em;
+    grid-gap: 15em;
+}
+
+img {
+	display: block;
+	border-radius : 20px 20px 20px 20px;
+    border: green;
+    margin: 0em 0em 0 -5em;
+    padding-top: 1em;
+	background: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header {
+	opacity: 90%;
+	padding-top:1em;
+	color: #0066b2;
+	background-color: white;
+	padding-bottom: 1em;
+	font-weight: lighter;
+}
+
+.p {
+	transform: translate(-50%, -50%);
+}
+
+p {
+	color:#2a52be;
+}
+
+.sun2 {
+	border-radius : 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 1s;
+	background-color: #034694;
+}
+
+
+.sun:hover .sun2 {
+  opacity: 1;
+}
+
+p {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+p.value {
+	text-align:center;
+	padding-bottom: 5em;
+}
+
+div.button {
+    margin-top: 3.5em;
+    margin-left: 43.54em;
+}
+
+.input {
+    width:100%;
+    height:30%;
+}
+
+button.button:hover {
+	opacity: 0;
+}
+
+.button {
+	background-color: red;
+	color: white;
+	width: 50px;
+	height:50px;
+}
+
+</style>
+<body>
+
+<div class="navbar">
+	<h1 class="header">Plant Monitoring System</h1>
+</div>
+
+<div class="list">
+ <div class="sun">
+     <img src="static/images/temperature.png" alt = "Temperature" height=210 width=210/>
+     <div class="sun2">
+     <p class="value">Temperature</p>
+     <p>{{ temper }}°F</p>
+     </div>
+ </div>
+ <div class="sun">
+     <img src="static/images/light.png" alt = "Light" height=210 width=210/>
+     <div class="sun2">
+         <p class="value">Light</p>
+     <p>{{ light }}</p>
+     </div>
+ </div>
+ </ul>
+ <div class="sun">
+     <img src="static/images/humidity.png" alt = "Humidity" height=210 width=210/>
+     <div class="sun2">
+         <p class="value">Humidity</p>
+     <p>{{ hum }}%</p>
+     </div>
+ </div>
+ <div class="sun">
+     <img src="static/images/moist.jpeg" alt = "Moisture" height=210 width=210/>
+     <div class="sun2">
+         <p class="value">Moisture</p>
+     <p>{{ moist }}%</p>
+     </div>
+ </div>
+</div>
+
+</body>
+</html>
