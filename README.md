@@ -1,4 +1,15 @@
-# IoT-Based-Plant-Monitoring-System
+# IoT-Based-Plant-Monitoring-System(Built with Python, HTML and CSS)
+
+## Introduction
+This IoT Based Plant Monitoring System will help to monitor certain plant attributes like light received, moisture level, temperature, and humidity with the help of some sensors. If the moisture level fall below a certain value, we will receive a notification through a text message. We will be establishing a socket-based communication between the Omega and the laptop wherein the omega will act as a server and the laptop will act as a client. All the data sent from the sensors will be display on a web interface. 
+
+## Links
+
+#### Demo video: https://youtu.be/q-6uZqlhOtI
+
+
+## Uses
+Monitor plant attributes like light level, moisture level, temperature and humidity level
 
 ## Requirements
 Omega2, Connecting cables, temperature and humidity sensor, light sensor, Soil moisture sensor Y-69 and Arduino Dock
