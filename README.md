@@ -8,5 +8,12 @@ First connect the Omega2 to the Arduino dock. Then connect the sensor modules to
 
 <img src="Images/conn.png" alt="Connections" width=300 height=300>
 
-## 
+## Installation
+Arduino IDE, AWSIoTPythonSDK, socket and Flask
+
+## Flowchart
+<img src="Images/flow.png" alt="Flowchart" width=300 height=300>
+
+## Working
+
 
