@@ -12,8 +12,23 @@ First connect the Omega2 to the Arduino dock. Then connect the sensor modules to
 Arduino IDE, AWSIoTPythonSDK, socket and Flask
 
 ## Flowchart
-<img src="Images/flow.png" alt="Flowchart" width=300 height=300>
+<img src="Images/flow.png" alt="Flowchart" width=400 height=300>
 
 ## Working
+* Step-by-step Instructions:
+  * First upload the Final_Proj.ino code to the Omega. Run the Proj_server.py code on the Omega terminal and then run the Proj_client.py on the client(Laptop). This will establish a connection with the IoT device via socket communication.
+
+  * After the connection is established, we send a command to the IoT device using the client terminal.
+
+  * If the command is “CONNECT” it will collect temperature, moisture, humidity and light value from the IoT device else it will say "No command found".
+
+  * After the data values are sent to the client the connection between client and server is terminated.
+
+  * The data values are then available to the user via a web interface.
+
+  * The user will be able to see the data values by hovering over the images of temperature, light, moisture, or humidity.
+
+  * If the moisture value is lower than 50% a text message will be sent to the user saying, "Moisture value is below 50%”. This is done using mqtt and creating a rule to send a text message using mqtt. 
+
 
 
