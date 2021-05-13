@@ -6,5 +6,5 @@ Required tools: Omega2, Connecting cables, temperature and humidity sensor, ligh
 ## Connections 
 First connect the Omega2 to the Arduino dock. Then connect the sensor modules to the Arduino Dock using the connecting cables. Use a MicroUSB Port to supply power to the Arduino Dock.
 
-
+![GitHub Logo](/images/logo.png)
 
