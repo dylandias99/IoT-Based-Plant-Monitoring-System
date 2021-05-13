@@ -30,12 +30,18 @@ Arduino IDE, AWSIoTPythonSDK, socket and Flask
 
   * If the moisture value is lower than 50% a text message will be sent to the user saying, "Moisture value is below 50%”. This is done using mqtt and creating a rule to send a text message using mqtt. 
 
-## Screenshots
+## Developers
+* Dylan Dias - @dylandias99 - https://github.com/dylandias99
 
+## Screenshots
+#### Web Interface                               
 <img src="Images/web-interface.png" alt="Web Interface" width=550 height=300>
 
+#### Text Message                             
 <img src="Images/text.png" alt="Text Message" width=500 height=350>
 
+#### Terminal                             
 <img src="Images/terminal.png" alt="Terminal" width=450 height=300>
 
+#### Hover Output                             
 <img src="Images/hover-output.png" alt="Hover Output" width=550 height=300>
