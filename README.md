@@ -7,7 +7,6 @@ This IoT Based Plant Monitoring System will help to monitor certain plant attrib
 
 #### Demo video: https://youtu.be/q-6uZqlhOtI
 
-
 ## Uses
 Monitor plant attributes like light level, moisture level, temperature and humidity level
 
